@@ -42,32 +42,105 @@
 
                 <!--Boton de minimizar-->
                 <Button x:Name="btnMinimize"
-                        Background="#E6E6E6"
                         BorderThickness="0"
-                        Content="-"
-                        Foreground="Black"
-                        FontSize="22"
+                        Content="-" 
+                        FontSize="21"
                         FontFamily="Montserrat"
                         Cursor="Hand"
                         Grid.Column="1"
                         Click="btnMinimize_Click"
                         FontWeight="Bold">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Foreground" Value="#E6E6E6"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#31A8FF"/>
+                                    <Setter Property="Foreground" Value="black"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="20" Height="25" 
+                                   CornerRadius="9"
+                                   Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
                 </Button>
 
                 <!--Boton de cerrar-->
                 <Button x:Name="btnClose"                        
-                        Background="#E6E6E6"
                         BorderThickness="0"
-                        Content="X"
-                        Foreground="Black"
+                        Content="X"  
                         FontSize="15"
                         FontFamily="Montserrat"
                         Cursor="Hand"
                         Grid.Column="2"
                         Click="btnClose_Click"
                         FontWeight="Bold">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Foreground" Value="#E6E6E6"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#31A8FF"/>
+                                    <Setter Property="Foreground" Value="black"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="20" Height="25" 
+                CornerRadius="9"
+                Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
                 </Button>
             </Grid>
+
+            <StackPanel Orientation="Horizontal"
+            Background="#333333"
+            Height="40"
+           
+              Margin="10,49,10,-59">
+                <Button Content="Inicio"
+            Foreground="White"
+            Background="Transparent">
+                    
+                </Button>
+                <Button Content="Inicio"
+Foreground="White"
+Background="Transparent">
+
+                </Button>
+                <Button Content="Inicio"
+Foreground="White"
+Background="Transparent">
+
+                </Button>
+                <Button Content="Inicio"
+Foreground="White"
+Background="Transparent">
+
+                </Button>
+            </StackPanel>
+
         </Grid>
     </Border>
 </Window>
+ 
