@@ -126,7 +126,7 @@
                 <Button Content="USA"
                         Margin="15,0,5,0"
                         FontWeight="Bold"
-                        FontSize="11"
+                        FontSize="12"
                         FontFamily="Montserrat">
 
                     <Button.Style>
@@ -157,7 +157,7 @@
                 <Button Content="LAC"
                         Margin="15,0,5,0"
                         FontWeight="Bold"
-                        FontSize="11"
+                        FontSize="12"
                         FontFamily="Montserrat">
 
                     <Button.Style>
@@ -188,7 +188,7 @@
                 <Button Content="DCC LEVELS"
                         Margin="15,0,5,0"
                         FontWeight="Bold"
-                        FontSize="11"
+                        FontSize="12"
                         FontFamily="Montserrat">
 
                     <Button.Style>
@@ -219,7 +219,7 @@
                 <Button Content="FO ERRORS"
                         Margin="15,0,5,0" 
                         FontWeight="Bold"
-                        FontSize="11"
+                        FontSize="12"
                         FontFamily="Montserrat">
                     <Button.Style>
                         <Style TargetType="Button">
@@ -254,8 +254,8 @@
                               ClickMode="Press"
                               Content="Others"
                               FontWeight="Bold"
-                              FontSize="12"
-                              Margin="15,0,5,0">
+                              FontSize="13"
+                              Margin="15,0,5,0" Height="41">
 
                     
                     <ToggleButton.Style>
@@ -305,7 +305,7 @@
                 <Button Content="READY"
                         Margin="15,0,5,0"
                         FontWeight="Bold"
-                        FontSize="11"
+                        FontSize="12"
                         FontFamily="Montserrat">
 
                     <Button.Style>
