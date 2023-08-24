@@ -15,8 +15,8 @@
         >
 
     <Border CornerRadius="20"
-            Background="#E6E6E6"
-            BorderBrush="#E6E6E6"
+            Background="#1E1E1E"
+            BorderBrush="#1E1E1E"
             BorderThickness="0">
 
         <Grid>
@@ -32,7 +32,7 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Text="Electronics Template Application"
-                           Foreground="Black"
+                           Foreground="White"
                            FontSize="11"
                            FontFamily="Montserrat"
                            Grid.Column="0"
@@ -52,7 +52,7 @@
                         FontWeight="Bold">
                     <Button.Style>
                         <Style TargetType="Button">
-                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Background" Value="#757575"/>
                             <Setter Property="Foreground" Value="#E6E6E6"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
@@ -89,7 +89,7 @@
 
                     <Button.Style>
                         <Style TargetType="Button">
-                            <Setter Property="Background" Value="Black"/>
+                            <Setter Property="Background" Value="#757575"/>
                             <Setter Property="Foreground" Value="#E6E6E6"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
@@ -114,15 +114,15 @@
             </Grid>
 
             <Border CornerRadius="20"
-                    Background="Black"
-                    BorderBrush="Black"
+                    Background="#757575"
+                    BorderBrush="#757575"
                     BorderThickness="0"
-                    Margin="5,49,5,-69"/>
+                    Margin="5,45,5,-75"/>
             <StackPanel Orientation="Horizontal"
                         Background="Transparent"
                         Height="50" 
                         Margin="10,49,10,-59">
-                
+
                 <Button Content="USA"
                         Margin="15,0,5,0"
                         FontWeight="Bold"
@@ -183,7 +183,7 @@
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
-                    
+
                 </Button>
                 <Button Content="DCC LEVELS"
                         Margin="15,0,5,0"
@@ -214,7 +214,7 @@
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
-                    
+
                 </Button>
                 <Button Content="FO ERRORS"
                         Margin="15,0,5,0" 
@@ -257,7 +257,7 @@
                               FontSize="13"
                               Margin="15,0,5,0" Height="41">
 
-                    
+
                     <ToggleButton.Style>
                         <Style TargetType="ToggleButton">
                             <Setter Property="Background" Value="White"/>
@@ -301,7 +301,7 @@
                     </ToggleButton.Template>
 
                 </ToggleButton>
-                            
+
                 <Button Content="READY"
                         Margin="15,0,5,0"
                         FontWeight="Bold"
@@ -334,6 +334,76 @@
                 </Button>
             </StackPanel>
 
+            <Border CornerRadius="20"
+                    Background="#757575"
+                    BorderBrush="#757575"
+                    BorderThickness="0"
+                    Margin="10,150,53,-169"/>
+            <StackPanel Orientation="Horizontal"
+                        Background="Transparent" 
+                         Margin="10,150,53,-169">
+
+                <TextBlock Text="TL Consulted:"
+                           Foreground="White"
+                           FontSize="11"
+                           FontFamily="Montserrat"
+                           Grid.Column="0"
+                           VerticalAlignment="Center"
+                           Margin="10,0,0,0"
+                           FontWeight="Bold">
+                </TextBlock>
+
+                <Border Width="250"
+                        Height="35"
+                        Background="White"
+                        CornerRadius="9"
+                        Margin="5,0,0,0">
+
+                    <TextBox x:Name="txtTlConsulted"
+                         FontSize="11"
+                         FontFamily="Montserrat"
+                         FontWeight="Bold"
+                         BorderThickness="0"
+                         Padding="5"
+                         Width="255"
+                         Height="35"
+                         Background="Transparent" HorizontalAlignment="Left"/>
+
+
+                </Border>
+
+                <Button Content="Copy"
+                        Margin="30,0,5,0"
+                        FontWeight="Bold"
+                        FontSize="12"
+                        FontFamily="Montserrat">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#31A8FF"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="60" Height="30" 
+                    CornerRadius="9"
+                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+            </StackPanel>
         </Grid>
     </Border>
 </Window>
