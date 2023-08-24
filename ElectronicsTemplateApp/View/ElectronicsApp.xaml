@@ -33,7 +33,7 @@
 
                 <TextBlock Text="Electronics Template Application"
                            Foreground="Black"
-                           FontSize="10"
+                           FontSize="11"
                            FontFamily="Montserrat"
                            Grid.Column="0"
                            VerticalAlignment="Center"
@@ -113,30 +113,224 @@
                 </Button>
             </Grid>
 
+            <Border CornerRadius="20"
+                    Background="Black"
+                    BorderBrush="Black"
+                    BorderThickness="0"
+                    Margin="5,49,5,-69"/>
             <StackPanel Orientation="Horizontal"
-            Background="#333333"
-            Height="40"
-           
-              Margin="10,49,10,-59">
-                <Button Content="Inicio"
-            Foreground="White"
-            Background="Transparent">
+                        Background="Transparent"
+                        Height="50" 
+                        Margin="10,49,10,-59">
+                
+                <Button Content="USA"
+                        Margin="15,0,5,0"
+                        FontWeight="Bold"
+                        FontSize="11"
+                        FontFamily="Montserrat">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#31A8FF"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="50" Height="25" 
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+                <Button Content="LAC"
+                        Margin="15,0,5,0"
+                        FontWeight="Bold"
+                        FontSize="11"
+                        FontFamily="Montserrat">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#31A8FF"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="50" Height="25" 
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
                     
                 </Button>
-                <Button Content="Inicio"
-Foreground="White"
-Background="Transparent">
+                <Button Content="DCC LEVELS"
+                        Margin="15,0,5,0"
+                        FontWeight="Bold"
+                        FontSize="11"
+                        FontFamily="Montserrat">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#31A8FF"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="75" Height="25" 
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                    
+                </Button>
+                <Button Content="FO ERRORS"
+                        Margin="15,0,5,0" 
+                        FontWeight="Bold"
+                        FontSize="11"
+                        FontFamily="Montserrat">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#31A8FF"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="75" Height="25" 
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
 
                 </Button>
-                <Button Content="Inicio"
-Foreground="White"
-Background="Transparent">
 
-                </Button>
-                <Button Content="Inicio"
-Foreground="White"
-Background="Transparent">
+                <ToggleButton x:Name="OthersToggleButton"
+                              FontFamily="Montserrat"
+                              HorizontalContentAlignment="Center"
+                              VerticalContentAlignment="Center"
+                              ClickMode="Press"
+                              Content="Others"
+                              FontWeight="Bold"
+                              FontSize="12"
+                              Margin="15,0,5,0">
 
+                    
+                    <ToggleButton.Style>
+                        <Style TargetType="ToggleButton">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#31A8FF"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ToggleButton.Style>
+
+                    <ToggleButton.Template>
+
+                        <ControlTemplate TargetType="ToggleButton">
+                            <Border Width="50"
+                                    Height="22"
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+
+                                <StackPanel>
+                                    <ContentPresenter Content="{TemplateBinding Content}"
+                                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                                    </ContentPresenter>
+
+                                    <Popup IsOpen="{Binding IsChecked,RelativeSource={RelativeSource TemplatedParent},Mode=TwoWay}"
+                                           Placement="Bottom">
+                                        <Border Background="White" BorderBrush="White" BorderThickness="0">
+                                            <StackPanel>
+                                                <Button Content="BUPA Chile"></Button>
+                                                <Button Content="FMEP"></Button>
+                                                <Button Content="FME Case"></Button>
+                                            </StackPanel>
+                                        </Border>
+                                    </Popup>
+                                </StackPanel>
+                            </Border>
+                        </ControlTemplate>
+                    </ToggleButton.Template>
+
+                </ToggleButton>
+                            
+                <Button Content="READY"
+                        Margin="15,0,5,0"
+                        FontWeight="Bold"
+                        FontSize="11"
+                        FontFamily="Montserrat">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#31A8FF"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="50" Height="25" 
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
                 </Button>
             </StackPanel>
 
