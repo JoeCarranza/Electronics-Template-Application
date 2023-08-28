@@ -338,10 +338,10 @@
                     Background="#757575"
                     BorderBrush="#757575"
                     BorderThickness="0"
-                    Margin="10,150,53,-169"/>
+                    Margin="31,150,32,-169"/>
             <StackPanel Orientation="Horizontal"
                         Background="Transparent" 
-                         Margin="10,150,53,-169">
+                         Margin="32,150,32,-169">
 
                 <TextBlock Text="TL Consulted:"
                            Foreground="White"
@@ -349,7 +349,7 @@
                            FontFamily="Montserrat"
                            Grid.Column="0"
                            VerticalAlignment="Center"
-                           Margin="10,0,0,0"
+                           Margin="10,0,5,0"
                            FontWeight="Bold">
                 </TextBlock>
 
@@ -359,21 +359,21 @@
                         CornerRadius="9"
                         Margin="5,0,0,0">
 
-                    <TextBox x:Name="txtTlConsulted"
+                    <TextBox x:Name="txtBoxTlConsulted"
                          FontSize="11"
                          FontFamily="Montserrat"
                          FontWeight="Bold"
                          BorderThickness="0"
-                         Padding="5"
-                         Width="255"
+                         Padding="11"
+                         Width="250"
                          Height="35"
-                         Background="Transparent" HorizontalAlignment="Left"/>
+                         Background="Transparent" HorizontalAlignment="Center" TextAlignment="Center"/>
 
 
                 </Border>
 
                 <Button Content="Copy"
-                        Margin="30,0,5,0"
+                        Margin="20,0,5,0"
                         FontWeight="Bold"
                         FontSize="12"
                         FontFamily="Montserrat">
@@ -404,6 +404,77 @@
 
                 </Button>
             </StackPanel>
+
+            <Border CornerRadius="20"
+                    Background="#757575"
+                    BorderBrush="#757575"
+                    BorderThickness="0"
+                    Margin="31,215,32,-234">
+                <StackPanel Orientation="Horizontal"
+                            Background="Transparent">
+                    <TextBlock Text="WO Title:"
+                               Foreground="White"
+                               FontSize="11"
+                               FontFamily="Montserrat"
+                               Grid.Column="0"
+                               VerticalAlignment="Center"
+                               Margin="10,0,28,0"
+                               FontWeight="Bold">
+                    </TextBlock>
+
+                    <Border Width="250"
+                            Height="35"
+                            Background="White"
+                            CornerRadius="9"
+                            Margin="5,0,0,0">
+
+                        <TextBox x:Name="txtBoxWOTitle"
+                                 FontSize="11"
+                                 FontFamily="Montserrat"
+                                 FontWeight="Bold"
+                                 BorderThickness="0"
+                                 Padding="11"
+                                 Width="250"
+                                 Height="35"
+                                 Background="Transparent" HorizontalAlignment="Center" TextAlignment="Center"/>
+
+                    </Border>
+                    <Button Content="Copy"
+                            Margin="21,0,5,0"
+                            FontWeight="Bold"
+                            FontSize="12"
+                            FontFamily="Montserrat">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="White"/>
+                                <Setter Property="Foreground" Value="Black"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#31A8FF"/>
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="60" Height="30" 
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+
+                    </Button>
+
+
+                </StackPanel>
+            </Border>
+
         </Grid>
     </Border>
 </Window>
