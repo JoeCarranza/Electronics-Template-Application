@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ElectronicsTemplateApp.View"
         mc:Ignorable="d"
-        Title="Electronics_Template_Application" Height="650" Width="500"
+        Title="Electronics_Template_Application" Height="850" Width="550"
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -15,8 +15,8 @@
         >
 
     <Border CornerRadius="20"
-            Background="#1E1E1E"
-            BorderBrush="#1E1E1E"
+            Background="#FFFFFF"
+            BorderBrush="#FFFFFF"
             BorderThickness="0">
 
         <Grid>
@@ -32,7 +32,7 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Text="Electronics Template Application"
-                           Foreground="White"
+                           Foreground="#000000"
                            FontSize="11"
                            FontFamily="Montserrat"
                            Grid.Column="0"
@@ -52,12 +52,12 @@
                         FontWeight="Bold">
                     <Button.Style>
                         <Style TargetType="Button">
-                            <Setter Property="Background" Value="#757575"/>
-                            <Setter Property="Foreground" Value="#E6E6E6"/>
+                            <Setter Property="Background" Value="#000000"/>
+                            <Setter Property="Foreground" Value="#FFFFFF"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#31A8FF"/>
-                                    <Setter Property="Foreground" Value="black"/>
+                                    <Setter Property="Background" Value="#40DEFA"/>
+                                    <Setter Property="Foreground" Value="#000000"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
@@ -89,12 +89,12 @@
 
                     <Button.Style>
                         <Style TargetType="Button">
-                            <Setter Property="Background" Value="#757575"/>
-                            <Setter Property="Foreground" Value="#E6E6E6"/>
+                            <Setter Property="Background" Value="#000000"/>
+                            <Setter Property="Foreground" Value="#FFFFFF"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#31A8FF"/>
-                                    <Setter Property="Foreground" Value="black"/>
+                                    <Setter Property="Background" Value="#40DEFA"/>
+                                    <Setter Property="Foreground" Value="#000000"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
@@ -114,8 +114,8 @@
             </Grid>
 
             <Border CornerRadius="20"
-                    Background="#757575"
-                    BorderBrush="#757575"
+                    Background="#40DEFA"
+                    BorderBrush="#40DEFA"
                     BorderThickness="0"
                     Margin="5,45,5,-75"/>
             <StackPanel Orientation="Horizontal"
@@ -124,19 +124,19 @@
                         Margin="10,49,10,-59">
 
                 <Button Content="USA"
-                        Margin="15,0,5,0"
+                        Margin="35,0,0,0"
                         FontWeight="Bold"
                         FontSize="12"
                         FontFamily="Montserrat">
 
                     <Button.Style>
                         <Style TargetType="Button">
-                            <Setter Property="Background" Value="White"/>
-                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="Background" Value="#FFFFFF"/>
+                            <Setter Property="Foreground" Value="#000000"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#31A8FF"/>
-                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Background" Value="#000000"/>
+                                    <Setter Property="Foreground" Value="#FFFFFF"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
@@ -155,19 +155,19 @@
 
                 </Button>
                 <Button Content="LAC"
-                        Margin="15,0,5,0"
+                        Margin="20,0,0,0"
                         FontWeight="Bold"
                         FontSize="12"
                         FontFamily="Montserrat">
 
                     <Button.Style>
                         <Style TargetType="Button">
-                            <Setter Property="Background" Value="White"/>
-                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="Background" Value="#FFFFFF"/>
+                            <Setter Property="Foreground" Value="#000000"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#31A8FF"/>
-                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Background" Value="#000000"/>
+                                    <Setter Property="Foreground" Value="#FFFFFF"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
@@ -186,19 +186,19 @@
 
                 </Button>
                 <Button Content="DCC LEVELS"
-                        Margin="15,0,5,0"
+                         Margin="20,0,0,0"
                         FontWeight="Bold"
                         FontSize="12"
                         FontFamily="Montserrat">
 
                     <Button.Style>
                         <Style TargetType="Button">
-                            <Setter Property="Background" Value="White"/>
-                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="Background" Value="#FFFFFF"/>
+                            <Setter Property="Foreground" Value="#000000"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#31A8FF"/>
-                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Background" Value="#000000"/>
+                                    <Setter Property="Foreground" Value="#FFFFFF"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
@@ -217,18 +217,18 @@
 
                 </Button>
                 <Button Content="FO ERRORS"
-                        Margin="15,0,5,0" 
+                        Margin="20,0,0,0" 
                         FontWeight="Bold"
                         FontSize="12"
                         FontFamily="Montserrat">
                     <Button.Style>
                         <Style TargetType="Button">
-                            <Setter Property="Background" Value="White"/>
-                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="Background" Value="#FFFFFF"/>
+                            <Setter Property="Foreground" Value="#000000"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#31A8FF"/>
-                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Background" Value="#000000"/>
+                                    <Setter Property="Foreground" Value="#FFFFFF"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
@@ -255,17 +255,17 @@
                               Content="Others"
                               FontWeight="Bold"
                               FontSize="13"
-                              Margin="15,0,5,0" Height="41">
+                              Margin="20,0,0,0" Height="41">
 
 
                     <ToggleButton.Style>
                         <Style TargetType="ToggleButton">
-                            <Setter Property="Background" Value="White"/>
-                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="Background" Value="#FFFFFF"/>
+                            <Setter Property="Foreground" Value="#000000"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#31A8FF"/>
-                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Background" Value="#000000"/>
+                                    <Setter Property="Foreground" Value="#FFFFFF"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
@@ -287,7 +287,7 @@
 
                                     <Popup IsOpen="{Binding IsChecked,RelativeSource={RelativeSource TemplatedParent},Mode=TwoWay}"
                                            Placement="Bottom">
-                                        <Border Background="White" BorderBrush="White" BorderThickness="0">
+                                        <Border Background="#FFFFFF" BorderBrush="White" BorderThickness="0">
                                             <StackPanel>
                                                 <Button Content="BUPA Chile"></Button>
                                                 <Button Content="FMEP"></Button>
@@ -303,19 +303,19 @@
                 </ToggleButton>
 
                 <Button Content="READY"
-                        Margin="15,0,5,0"
+                         Margin="20,0,10,0"
                         FontWeight="Bold"
                         FontSize="12"
                         FontFamily="Montserrat">
 
                     <Button.Style>
                         <Style TargetType="Button">
-                            <Setter Property="Background" Value="White"/>
-                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="Background" Value="#FFFFFF"/>
+                            <Setter Property="Foreground" Value="#000000"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#31A8FF"/>
-                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Background" Value="#000000"/>
+                                    <Setter Property="Foreground" Value="#FFFFFF"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
@@ -335,16 +335,16 @@
             </StackPanel>
 
             <Border CornerRadius="20"
-                    Background="#757575"
-                    BorderBrush="#757575"
+                    Background="#40DEFA"
+                    BorderBrush="#40DEFA"
                     BorderThickness="0"
                     Margin="31,150,32,-169"/>
             <StackPanel Orientation="Horizontal"
                         Background="Transparent" 
-                         Margin="32,150,32,-169">
+                         Margin="31,150,32,-169">
 
                 <TextBlock Text="TL Consulted:"
-                           Foreground="White"
+                           Foreground="#000000"
                            FontSize="11"
                            FontFamily="Montserrat"
                            Grid.Column="0"
@@ -353,9 +353,9 @@
                            FontWeight="Bold">
                 </TextBlock>
 
-                <Border Width="250"
+                <Border Width="300"
                         Height="35"
-                        Background="White"
+                        Background="#FFFFFF"
                         CornerRadius="9"
                         Margin="5,0,0,0">
 
@@ -365,7 +365,7 @@
                          FontWeight="Bold"
                          BorderThickness="0"
                          Padding="11"
-                         Width="250"
+                         Width="300"
                          Height="35"
                          Background="Transparent" HorizontalAlignment="Center" TextAlignment="Center"/>
 
@@ -380,12 +380,12 @@
 
                     <Button.Style>
                         <Style TargetType="Button">
-                            <Setter Property="Background" Value="White"/>
-                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="Background" Value="#FFFFFF"/>
+                            <Setter Property="Foreground" Value="#000000"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#31A8FF"/>
-                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Background" Value="#000000"/>
+                                    <Setter Property="Foreground" Value="#FFFFFF"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
@@ -394,10 +394,10 @@
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <Border Width="60" Height="30" 
-                    CornerRadius="9"
-                    Background="{TemplateBinding Background}">
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
                                 <ContentPresenter VerticalAlignment="Center"
-                                  HorizontalAlignment="Center"/>
+                                                  HorizontalAlignment="Center"/>
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
@@ -406,14 +406,14 @@
             </StackPanel>
 
             <Border CornerRadius="20"
-                    Background="#757575"
-                    BorderBrush="#757575"
+                    Background="#40DEFA"
+                    BorderBrush="#40DEFA"
                     BorderThickness="0"
                     Margin="31,215,32,-234">
                 <StackPanel Orientation="Horizontal"
                             Background="Transparent">
                     <TextBlock Text="WO Title:"
-                               Foreground="White"
+                               Foreground="#000000"
                                FontSize="11"
                                FontFamily="Montserrat"
                                Grid.Column="0"
@@ -422,9 +422,9 @@
                                FontWeight="Bold">
                     </TextBlock>
 
-                    <Border Width="250"
+                    <Border Width="300"
                             Height="35"
-                            Background="White"
+                            Background="#FFFFFF"
                             CornerRadius="9"
                             Margin="5,0,0,0">
 
@@ -434,7 +434,7 @@
                                  FontWeight="Bold"
                                  BorderThickness="0"
                                  Padding="11"
-                                 Width="250"
+                                 Width="300"
                                  Height="35"
                                  Background="Transparent" HorizontalAlignment="Center" TextAlignment="Center"/>
 
@@ -447,12 +447,12 @@
 
                         <Button.Style>
                             <Style TargetType="Button">
-                                <Setter Property="Background" Value="White"/>
-                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="Background" Value="#FFFFFF"/>
+                                <Setter Property="Foreground" Value="#000000"/>
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#31A8FF"/>
-                                        <Setter Property="Foreground" Value="White"/>
+                                        <Setter Property="Background" Value="#000000"/>
+                                        <Setter Property="Foreground" Value="#FFFFFF"/>
                                     </Trigger>
                                 </Style.Triggers>
                             </Style>
@@ -470,11 +470,33 @@
                         </Button.Template>
 
                     </Button>
-
-
                 </StackPanel>
             </Border>
 
+           
+                
+            
+            <Border CornerRadius="20"
+                    Background="#FFFFFF"
+                    BorderBrush="#000000"
+                    BorderThickness="2"
+                    Width="450"
+                    Height="500"
+                    Margin="50,279,50,-800">
+                
+                <TextBox x:Name="TemplateSection"
+                     FontSize="12"
+                     FontFamily="Montserrat"
+                     FontWeight="Bold"
+                     Background="Transparent"
+                     Foreground="#000000"
+                     Width="420"
+                     Height="480"
+                     BorderBrush="Transparent"
+                     BorderThickness="0"
+                     AcceptsReturn="True" TextWrapping="Wrap"/>
+            </Border>
+            
         </Grid>
     </Border>
 </Window>
