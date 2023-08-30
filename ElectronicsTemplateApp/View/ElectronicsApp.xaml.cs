@@ -41,5 +41,27 @@ namespace ElectronicsTemplateApp.View
         {
             Application.Current.Shutdown();
         }
+
+        private void USATemplate(object sender, RoutedEventArgs e)
+        {
+            TemplateSection.Text = "-------------------------------------------------------------------------------------\r\n\r\nSerial Number: \r\n\r\nPrinter Model:  \r\n\r\nProblem Description: \r\n\r\nDCC %: \r\n\r\nFleet Ops: \r\n\r\nEWS Access: \r\n\r\nPrevious Cases: \r\n\r\nAction Plan: Sending tech to diagnose, get internal pages, replace the recommended part as needed. Verfify printer functionality before leaving the site. If further assistance is needed, please contact Tech Assist\r\n\r\nPart recommended : \r\n\r\nTL Consulted: \r\n\r\n-------------------------------------------------------------------------------------\r\n"
+                + Environment.NewLine;
+        }
+
+        private void LACTemplate(object sender, RoutedEventArgs e)
+        {
+            TemplateSection.Text = "-------------------------------------------------------------------------------------\r\n\r\nNumero de serie: \r\n\r\nModelo:  \r\n\r\nDescripcion del problema: \r\n\r\nDCC %: \r\n\r\nFleet Ops: \r\n\r\nAcceso EWS: \r\n\r\nCasos previos: \r\n\r\nPlan de acción: Se envía técnico al sitio a diagnoticar y a remplazar las partes recomendadas, si el problema persiste contactar a TA.\r\n\r\nParte recomendada : \r\n\r\nConsulta TL: \r\n\r\n-------------------------------------------------------------------------------------\r\n"
+               + Environment.NewLine;
+        }
+
+        private void BupaTemplate(object sender, RoutedEventArgs e)
+        {
+            TemplateSection.Text = "-------------------------------------------------------------------------------------\r\n\r\nEste es un cliente CONTRACTUAL dMPS por favor proceda con el diagnóstico y el despacho de la solución.\r\n\r\n-------------------------------------------------------------------------------------\r\n" + Environment.NewLine;
+        }
+
+        private void DuplicateTemplate(object sender, RoutedEventArgs e)
+        {
+            TemplateSection.Text = "-------------------------------------------------------------------------------------\r\n\r\nThis is a duplicate case. \r\nThe error is worked in this case number: \r\n\r\n-------------------------------------------------------------------------------------\r\n" + Environment.NewLine;
+        }
     }
 }
