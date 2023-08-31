@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -62,6 +63,45 @@ namespace ElectronicsTemplateApp.View
         private void DuplicateTemplate(object sender, RoutedEventArgs e)
         {
             TemplateSection.Text = "-------------------------------------------------------------------------------------\r\n\r\nThis is a duplicate case. \r\nThe error is worked in this case number: \r\n\r\n-------------------------------------------------------------------------------------\r\n" + Environment.NewLine;
+        }
+
+        private void EventReady(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(TemplateSection.Text))
+            {
+                Clipboard.SetText(TemplateSection.Text);
+                MessageBoxResult result = MessageBox.Show("Copy Note", "Copy!", MessageBoxButton.OK,MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show("Empty Note, please review", "Warning!", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private void CopyTlConsulted(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtBoxTlConsulted.Text))
+            {
+                Clipboard.SetText(txtBoxTlConsulted.Text);
+                MessageBoxResult result = MessageBox.Show("TL Consulted Title Copy", "Copy!", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show("Empty title, please review", "Warning!", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private void CopyWOTitle(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtBoxWOTitle.Text))
+            {
+                Clipboard.SetText(txtBoxWOTitle.Text);
+                MessageBoxResult result = MessageBox.Show("WO Title Copy", "Copy!", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show("Empty title, please review", "Warning!", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
     }
 }

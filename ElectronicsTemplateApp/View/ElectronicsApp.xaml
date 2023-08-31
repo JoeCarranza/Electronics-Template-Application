@@ -308,7 +308,8 @@
                         FontWeight="Bold"
                         FontSize="12"
                         FontFamily="Montserrat"
-                        Cursor="Hand">
+                        Cursor="Hand"
+                        Click="EventReady">
 
                     <Button.Style>
                         <Style TargetType="Button">
@@ -378,7 +379,8 @@
                         Margin="20,0,5,0"
                         FontWeight="Bold"
                         FontSize="12"
-                        FontFamily="Montserrat" Cursor="Hand">
+                        FontFamily="Montserrat" Cursor="Hand"
+                        Click="CopyTlConsulted">
 
                     <Button.Style>
                         <Style TargetType="Button">
@@ -445,6 +447,7 @@
                             Margin="21,0,5,0"
                             FontWeight="Bold"
                             FontSize="12"
+                            Click="CopyWOTitle"
                             FontFamily="Montserrat" Cursor="Hand">
 
                         <Button.Style>
