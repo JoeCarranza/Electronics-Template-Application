@@ -5,14 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ElectronicsTemplateApp.View"
         mc:Ignorable="d"
-        Title="Electronics_Template_Application" Height="850" Width="550"
+        Title="Electronics_Template_Application" Height="660" Width="560"
         WindowStyle="None"
-        ResizeMode="NoResize"
+        ResizeMode="CanResize"
         WindowStartupLocation="CenterScreen"
         Background="Transparent"
         AllowsTransparency="True"
-        MouseDown="Window_MouseDown"
-        >
+        MouseDown="Window_MouseDown">
 
     <Border CornerRadius="20"
             Background="#FFFFFF"
@@ -28,12 +27,12 @@
                     <ColumnDefinition/>
                     <ColumnDefinition Width="25"/>
                     <ColumnDefinition Width="25"/>
-                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="6"/>
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Text="Electronics Template Application"
                            Foreground="#000000"
-                           FontSize="14"
+                           FontSize="12"
                            FontFamily="Montserrat"
                            Grid.Column="0"
                            VerticalAlignment="Center"
@@ -85,7 +84,7 @@
                         Cursor="Hand"
                         Grid.Column="2"
                         Click="btnClose_Click"
-                        FontWeight="Bold" HorizontalAlignment="Left" Width="25">
+                        FontWeight="Bold" HorizontalAlignment="Center" Width="25">
 
                     <Button.Style>
                         <Style TargetType="Button">
@@ -117,16 +116,17 @@
                     Background="#0096D6"
                     BorderBrush="#0096D6"
                     BorderThickness="0"
-                    Margin="5,45,5,-75"/>
+                    Height="50"
+                    Margin="5,33,5,-53"/>
             <StackPanel Orientation="Horizontal"
                         Background="Transparent"
-                        Height="50" 
-                        Margin="10,49,10,-59">
+                        Height="35" 
+                        Margin="10,40,10,-45">
 
                 <Button Content="USA"
-                        Margin="35,0,0,0"
+                        Margin="15,0,0,0"
                         FontWeight="Bold"
-                        FontSize="12"
+                        FontSize="10"
                         FontFamily="Montserrat"
                         Click="USATemplate" Cursor="Hand">
 
@@ -145,7 +145,7 @@
 
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
-                            <Border Width="50" Height="25" 
+                            <Border Width="50" Height="22" 
                                     CornerRadius="9"
                                     Background="{TemplateBinding Background}">
                                 <ContentPresenter VerticalAlignment="Center"
@@ -156,9 +156,9 @@
 
                 </Button>
                 <Button Content="LAC"
-                        Margin="20,0,0,0"
+                        Margin="15,0,0,0"
                         FontWeight="Bold"
-                        FontSize="12"
+                        FontSize="10"
                         FontFamily="Montserrat"
                         Click="LACTemplate" Cursor="Hand">
 
@@ -177,7 +177,7 @@
 
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
-                            <Border Width="50" Height="25" 
+                            <Border Width="50" Height="22" 
                                     CornerRadius="9"
                                     Background="{TemplateBinding Background}">
                                 <ContentPresenter VerticalAlignment="Center"
@@ -188,9 +188,9 @@
 
                 </Button>
                 <Button Content="DCC LEVELS"
-                         Margin="20,0,0,0"
+                         Margin="15,0,0,0"
                         FontWeight="Bold"
-                        FontSize="12"
+                        FontSize="10"
                         FontFamily="Montserrat" Cursor="Hand">
 
                     <Button.Style>
@@ -208,7 +208,7 @@
 
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
-                            <Border Width="75" Height="25" 
+                            <Border Width="75" Height="22" 
                                     CornerRadius="9"
                                     Background="{TemplateBinding Background}">
                                 <ContentPresenter VerticalAlignment="Center"
@@ -219,9 +219,9 @@
 
                 </Button>
                 <Button Content="FO ERRORS"
-                        Margin="20,0,0,0" 
+                        Margin="15,0,0,0" 
                         FontWeight="Bold"
-                        FontSize="12"
+                        FontSize="10"
                         FontFamily="Montserrat" Cursor="Hand">
                     <Button.Style>
                         <Style TargetType="Button">
@@ -238,7 +238,7 @@
 
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
-                            <Border Width="75" Height="25" 
+                            <Border Width="75" Height="22" 
                                     CornerRadius="9"
                                     Background="{TemplateBinding Background}">
                                 <ContentPresenter VerticalAlignment="Center"
@@ -251,11 +251,11 @@
 
                 <ToggleButton x:Name="OthersToggleButton"
                               FontFamily="Montserrat"
-                              Content="Others"
+                              Content="OTHERS"
                               FontWeight="Bold"
-                              FontSize="11"
+                              FontSize="10"
                               Height="25"
-                              Margin="20,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"
+                              Margin="15,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"
                               Cursor="Hand" ClickMode="Press">
 
 
@@ -275,8 +275,8 @@
                     <ToggleButton.Template>
 
                         <ControlTemplate TargetType="ToggleButton">
-                            <Border Width="50"
-                                    Height="25"
+                            <Border Width="55"
+                                    Height="22"
                                     CornerRadius="9"
                                     Background="{TemplateBinding Background}">
 
@@ -303,10 +303,43 @@
 
                 </ToggleButton>
 
-                <Button Content="READY"
-                         Margin="20,0,10,0"
+                <Button Content="CLEAR"
+                        Margin="15,0,0,0"
                         FontWeight="Bold"
-                        FontSize="12"
+                        FontSize="10"
+                        FontFamily="Montserrat"
+                        Cursor="Hand"
+                        Click="ClearTemplateSection">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#FFFFFF"/>
+                            <Setter Property="Foreground" Value="#000000"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#000000"/>
+                                    <Setter Property="Foreground" Value="#FFFFFF"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="50" Height="22" 
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button Content="READY"
+                         Margin="15,0,0,0"
+                        FontWeight="Bold"
+                        FontSize="10"
                         FontFamily="Montserrat"
                         Cursor="Hand"
                         Click="EventReady">
@@ -326,7 +359,7 @@
 
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
-                            <Border Width="50" Height="25" 
+                            <Border Width="50" Height="22" 
                                     CornerRadius="9"
                                     Background="{TemplateBinding Background}">
                                 <ContentPresenter VerticalAlignment="Center"
@@ -335,24 +368,28 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
+                
+                
             </StackPanel>
 
             <Border CornerRadius="20"
                     Background="#0096D6"
                     BorderBrush="#0096D6"
                     BorderThickness="0"
-                    Margin="31,150,32,-169"/>
+                    Height="45"
+                    Margin="31,91,32,-106"/>
             <StackPanel Orientation="Horizontal"
-                        Background="Transparent" 
-                         Margin="31,150,32,-169">
+                        Background="Transparent"
+                        Height="35"
+                        Margin="32,96,31,-101">
 
                 <TextBlock Text="TL Consulted:"
                            Foreground="#000000"
-                           FontSize="11"
+                           FontSize="10"
                            FontFamily="Montserrat"
                            Grid.Column="0"
                            VerticalAlignment="Center"
-                           Margin="10,0,5,0"
+                           Margin="15,0,5,0"
                            FontWeight="Bold">
                 </TextBlock>
 
@@ -378,7 +415,7 @@
                 <Button Content="Copy"
                         Margin="20,0,5,0"
                         FontWeight="Bold"
-                        FontSize="12"
+                        FontSize="10"
                         FontFamily="Montserrat" Cursor="Hand"
                         Click="CopyTlConsulted">
 
@@ -397,7 +434,7 @@
 
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
-                            <Border Width="60" Height="30" 
+                            <Border Width="60" Height="22" 
                                     CornerRadius="9"
                                     Background="{TemplateBinding Background}">
                                 <ContentPresenter VerticalAlignment="Center"
@@ -413,16 +450,17 @@
                     Background="#0096D6"
                     BorderBrush="#0096D6"
                     BorderThickness="0"
-                    Margin="31,215,32,-234">
+                    Height="45"
+                    Margin="31,142,32,-157">
                 <StackPanel Orientation="Horizontal"
-                            Background="Transparent">
+                            Background="Transparent" Margin="10,0,-10,0">
                     <TextBlock Text="WO Title:"
                                Foreground="#000000"
-                               FontSize="11"
+                               FontSize="10"
                                FontFamily="Montserrat"
                                Grid.Column="0"
                                VerticalAlignment="Center"
-                               Margin="10,0,28,0"
+                               Margin="10,0,22,0"
                                FontWeight="Bold">
                     </TextBlock>
 
@@ -446,7 +484,7 @@
                     <Button Content="Copy"
                             Margin="21,0,5,0"
                             FontWeight="Bold"
-                            FontSize="12"
+                            FontSize="10"
                             Click="CopyWOTitle"
                             FontFamily="Montserrat" Cursor="Hand">
 
@@ -465,7 +503,7 @@
 
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
-                                <Border Width="60" Height="30" 
+                                <Border Width="60" Height="22" 
                                         CornerRadius="9"
                                         Background="{TemplateBinding Background}">
                                     <ContentPresenter VerticalAlignment="Center"
@@ -485,18 +523,18 @@
                     Background="#FFFFFF"
                     BorderBrush="#000000"
                     BorderThickness="2"
-                    Width="500"
-                    Height="550"
-                    Margin="20,279,20,-800">
+                    Width="540"
+                    Height="460"
+                    Margin="5,195,5,-625">
 
                 <TextBox x:Name="TemplateSection"
-                     FontSize="12"
+                     FontSize="10"
                      FontFamily="Montserrat"
                      FontWeight="Bold"
                      Background="Transparent"
                      Foreground="#000000"
-                     Width="480"
-                     Height="530"
+                     Width="520"
+                     Height="445"
                      BorderBrush="Transparent"
                      BorderThickness="0"
                      AcceptsReturn="True" TextWrapping="Wrap"/>
