@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Electronics_Template_Application" Height="660" Width="560"
         WindowStyle="None"
-        ResizeMode="CanResize"
+        ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         Background="Transparent"
         AllowsTransparency="True"
@@ -124,7 +124,7 @@
                         Margin="10,40,10,-45">
 
                 <Button Content="USA"
-                        Margin="15,0,0,0"
+                        Margin="20,0,0,0"
                         FontWeight="Bold"
                         FontSize="10"
                         FontFamily="Montserrat"
@@ -280,7 +280,8 @@
                                     CornerRadius="9"
                                     Background="{TemplateBinding Background}">
 
-                                <StackPanel>
+                                <StackPanel
+                                    Background="Transparent">
                                     <ContentPresenter Content="{TemplateBinding Content}"
                                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
@@ -289,10 +290,63 @@
 
                                     <Popup IsOpen="{Binding IsChecked,RelativeSource={RelativeSource TemplatedParent},Mode=TwoWay}"
                                            Placement="Bottom">
-                                        <Border Background="#FFFFFF" BorderBrush="White" BorderThickness="0">
+                                        <Border Background="{TemplateBinding Background}" BorderBrush="White" BorderThickness="0">
                                             <StackPanel>
-                                                <Button Content="BUPA Chile" Click="BupaTemplate" Cursor="Hand"></Button>
-                                                <Button Content="Duplicate case" Click="DuplicateTemplate"  Cursor="Hand"></Button>
+                                                <Button Content="BUPA Chile" Click="BupaTemplate" Cursor="Hand">
+
+                                                    <Button.Style>
+                                                        <Style TargetType="Button">
+                                                            <Setter Property="Background" Value="#FFFFFF"/>
+                                                            <Setter Property="Foreground" Value="#000000"/>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="True">
+                                                                    <Setter Property="Background" Value="#000000"/>
+                                                                    <Setter Property="Foreground" Value="#FFFFFF"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Button.Style>
+
+                                                    <Button.Template>
+                                                        <ControlTemplate TargetType="Button">
+                                                            <Border Width="75" Height="22" 
+                                                                    CornerRadius="9"
+                                                                    Background="{TemplateBinding Background}">
+                                                                <ContentPresenter VerticalAlignment="Center"
+                                                                                  HorizontalAlignment="Center"/>
+                                                            </Border>
+                                                        </ControlTemplate>
+                                                    </Button.Template>
+
+                                                </Button>
+                                                
+                                                <Button Content="Duplicate case" Click="DuplicateTemplate"  Cursor="Hand">
+
+                                                    <Button.Style>
+                                                        <Style TargetType="Button">
+                                                            <Setter Property="Background" Value="#FFFFFF"/>
+                                                            <Setter Property="Foreground" Value="#000000"/>
+                                                            <Style.Triggers>
+                                                                <Trigger Property="IsMouseOver" Value="True">
+                                                                    <Setter Property="Background" Value="#000000"/>
+                                                                    <Setter Property="Foreground" Value="#FFFFFF"/>
+                                                                </Trigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Button.Style>
+
+                                                    <Button.Template>
+                                                        <ControlTemplate TargetType="Button">
+                                                            <Border Width="75" Height="22" 
+                                                                    CornerRadius="9"
+                                                                    Background="{TemplateBinding Background}">
+                                                                <ContentPresenter VerticalAlignment="Center"
+                                                                                   HorizontalAlignment="Center"/>
+                                                            </Border>
+                                                        </ControlTemplate>
+                                                    </Button.Template>
+
+                                                </Button>
                                             </StackPanel>
                                         </Border>
                                     </Popup>
