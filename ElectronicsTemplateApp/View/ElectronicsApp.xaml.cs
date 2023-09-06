@@ -107,7 +107,7 @@ namespace ElectronicsTemplateApp.View
         private void ClearTemplateSection(object sender, RoutedEventArgs e)
         {
             TemplateSection.Text = string.Empty;
-            txtBoxTlConsulted.Text = string.Empty;
+            txtBoxTlConsulted.Text = "#Case / #PIN / DBD";
             txtBoxWOTitle.Text = string.Empty;
         }
     }

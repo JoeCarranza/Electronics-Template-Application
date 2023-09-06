@@ -20,3 +20,4 @@ C:\Users\carrjose\source\repos\ElectronicsTemplateApp\ElectronicsTemplateApp\obj
 C:\Users\carrjose\source\repos\ElectronicsTemplateApp\ElectronicsTemplateApp\obj\Debug\net6.0-windows\ref\ElectronicsTemplateApp.dll
 C:\Users\carrjose\source\repos\ElectronicsTemplateApp\ElectronicsTemplateApp\obj\Debug\net6.0-windows\View\ElectronicsApp.g.cs
 C:\Users\carrjose\source\repos\ElectronicsTemplateApp\ElectronicsTemplateApp\obj\Debug\net6.0-windows\View\ElectronicsApp.baml
+C:\Users\carrjose\source\repos\ElectronicsTemplateApp\ElectronicsTemplateApp\obj\Debug\net6.0-windows\ElectronicsTemplateApp_Content.g.cs
