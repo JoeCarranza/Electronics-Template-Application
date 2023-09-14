@@ -1,0 +1,5 @@
+C:\Users\carrjose\OneDrive - HP Inc\Desktop\ElectronicsTemplateApp\ElectronicsTemplateApp.exe
+C:\Users\carrjose\OneDrive - HP Inc\Desktop\ElectronicsTemplateApp\ElectronicsTemplateApp.dll
+C:\Users\carrjose\OneDrive - HP Inc\Desktop\ElectronicsTemplateApp\ElectronicsTemplateApp.deps.json
+C:\Users\carrjose\OneDrive - HP Inc\Desktop\ElectronicsTemplateApp\ElectronicsTemplateApp.runtimeconfig.json
+C:\Users\carrjose\OneDrive - HP Inc\Desktop\ElectronicsTemplateApp\ElectronicsTemplateApp.pdb

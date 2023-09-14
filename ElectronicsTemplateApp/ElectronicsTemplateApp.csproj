@@ -6,6 +6,14 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>Properties\Resourse\hplogo_94383.ico</ApplicationIcon>
+    <AssemblyName>ElectronicsTemplateApp</AssemblyName>
+    <Title>Electronics Templates App</Title>
+    <Company>Joseph Carranza</Company>
+    <Authors>Joseph Carranza</Authors>
+    <Product>Electronics Templates App</Product>
+    <Description>This application is used by the MPS Electronics team to perform different processes in case management.</Description>
+    <Copyright>Copyright © 2023</Copyright>
+    <PackageIcon>hplogo_94383.ico</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +25,13 @@
     <Folder Include="Images\" />
     <Folder Include="Model\" />
     <Folder Include="ViewModel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Resourse\hplogo_94383.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

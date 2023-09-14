@@ -583,7 +583,7 @@
                     Margin="5,195,5,-625">
 
                 <TextBox x:Name="TemplateSection"
-                     FontSize="10"
+                     FontSize="11"
                      FontFamily="Montserrat"
                      FontWeight="Bold"
                      Background="Transparent"

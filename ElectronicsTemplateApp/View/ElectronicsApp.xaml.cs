@@ -45,7 +45,7 @@ namespace ElectronicsTemplateApp.View
 
         private void USATemplate(object sender, RoutedEventArgs e)
         {
-            TemplateSection.Text = "\n------------------------------------------------------------------------------------\r\n\r\n>Serial Number: \r\n\r\n>Printer Model:  \r\n\r\n>Problem Description: \r\n\r\n>DCC %: \r\n\r\n>Fleet Ops: \r\n\r\n>EWS Access: \r\n\r\n>Previous Cases: \r\n\r\n>Action Plan: Sending tech to diagnose, get internal pages, replace the recommended part as needed. Verfify printer functionality before leaving the site. If further assistance is needed, please contact Tech Assist\r\n\r\n>Part recommended : \r\n\r\n>TL Consulted: \r\n\r\n"
+            TemplateSection.Text = "\n------------------------------------------------------------------------------------\r\n\r\n>Serial Number: \r\n\r\n>Printer Model:  \r\n\r\n>Problem Description: \r\n\r\n>DCC %: \r\n\r\n>Fleet Ops: \r\n\r\n>EWS Access: \r\n\r\n>Previous Cases: \r\n\r\n>Action Plan: Sending tech to diagnose, get internal pages, replace the recommended part as needed. Verify printer functionality before leaving the site. If further assistance is needed, please contact Tech Assist\r\n\r\n>Part recommended : \r\n\r\n>TL Consulted: \r\n\r\n"
                 + Environment.NewLine;
         }
 
