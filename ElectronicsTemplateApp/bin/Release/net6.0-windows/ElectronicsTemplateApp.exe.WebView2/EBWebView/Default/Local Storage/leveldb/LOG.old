@@ -1,0 +1,13 @@
+2023/10/11-14:59:14.472 b1ec Reusing MANIFEST C:\Users\carrjose\source\repos\Electronics-Template-Application\ElectronicsTemplateApp\bin\Release\net6.0-windows\ElectronicsTemplateApp.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2023/10/11-14:59:14.482 b1ec Recovering log #10
+2023/10/11-14:59:14.482 b1ec Level-0 table #12: started
+2023/10/11-14:59:14.519 b1ec Level-0 table #12: 35693 bytes OK
+2023/10/11-14:59:14.557 b1ec Delete type=0 #10
+2023/10/11-14:59:14.571 b1ec Compacting 4@0 + 0@1 files
+2023/10/11-14:59:14.607 b1ec Generated table #14@0: 18 keys, 19214 bytes
+2023/10/11-14:59:14.607 b1ec Compacted 4@0 + 0@1 files => 19214 bytes
+2023/10/11-14:59:14.608 b1ec compacted to: files[ 0 1 0 0 0 0 0 ]
+2023/10/11-14:59:14.609 b1ec Delete type=2 #3
+2023/10/11-14:59:14.610 b1ec Delete type=2 #6
+2023/10/11-14:59:14.610 b1ec Delete type=2 #9
+2023/10/11-14:59:14.610 b1ec Delete type=2 #12

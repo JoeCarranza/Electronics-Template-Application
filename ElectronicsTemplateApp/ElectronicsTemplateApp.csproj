@@ -28,6 +28,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
+    <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2045.28" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Properties\Resourse\hplogo_94383.ico">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

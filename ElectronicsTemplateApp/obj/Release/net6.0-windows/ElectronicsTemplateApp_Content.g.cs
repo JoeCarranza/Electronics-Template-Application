@@ -10,5 +10,8 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("hplogo_94383.ico")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("properties/resourse/hplogo_94383.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("webview2loader.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("webview2loader.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("webview2loader.dll")]
 
 

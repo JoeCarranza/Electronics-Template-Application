@@ -7,8 +7,62 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "ElectronicsTemplateApp/1.0.0": {
+        "dependencies": {
+          "FontAwesome.Sharp": "6.3.0",
+          "FontAwesome.WPF": "4.7.0.9",
+          "Microsoft.Web.WebView2": "1.0.2045.28"
+        },
         "runtime": {
           "ElectronicsTemplateApp.dll": {}
+        }
+      },
+      "FontAwesome.Sharp/6.3.0": {
+        "runtime": {
+          "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.3.0.0"
+          }
+        }
+      },
+      "FontAwesome.WPF/4.7.0.9": {
+        "runtime": {
+          "lib/net40/FontAwesome.WPF.dll": {
+            "assemblyVersion": "4.7.0.37774",
+            "fileVersion": "4.7.0.9"
+          }
+        }
+      },
+      "Microsoft.Web.WebView2/1.0.2045.28": {
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll": {
+            "assemblyVersion": "1.0.2045.28",
+            "fileVersion": "1.0.2045.28"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll": {
+            "assemblyVersion": "1.0.2045.28",
+            "fileVersion": "1.0.2045.28"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll": {
+            "assemblyVersion": "1.0.2045.28",
+            "fileVersion": "1.0.2045.28"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/WebView2Loader.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "1.0.2045.28"
+          },
+          "runtimes/win-x64/native/WebView2Loader.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.0.2045.28"
+          },
+          "runtimes/win-x86/native/WebView2Loader.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.0.2045.28"
+          }
         }
       }
     }
@@ -18,6 +72,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FontAwesome.Sharp/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3/Fb0N04yYK8An07oox5ISlUyNgsnWildHfoP69uqTEOsemQemRyciphMkXZOcdBupjUD+lVsRE3FqG41/dzPA==",
+      "path": "fontawesome.sharp/6.3.0",
+      "hashPath": "fontawesome.sharp.6.3.0.nupkg.sha512"
+    },
+    "FontAwesome.WPF/4.7.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SXE080rnyWMm9Dt0BZzMxh89/o9teuSaqL1N+0O/XM/F/HU8JuZA4XaEKxjBigwZPHHU3/udTa0QMYCHkmH43Q==",
+      "path": "fontawesome.wpf/4.7.0.9",
+      "hashPath": "fontawesome.wpf.4.7.0.9.nupkg.sha512"
+    },
+    "Microsoft.Web.WebView2/1.0.2045.28": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QDsR/HCNjzqYZrIuNLxyfmOIqVfMq1iGyoBR3OVVlFl4NZ12T8jRC0MNpOReKfgwtO5zh8g+eBYR6RAXFltcVA==",
+      "path": "microsoft.web.webview2/1.0.2045.28",
+      "hashPath": "microsoft.web.webview2.1.0.2045.28.nupkg.sha512"
     }
   }
 }

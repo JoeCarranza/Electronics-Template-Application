@@ -1,0 +1,14 @@
+2023/10/11-15:30:44.058 9bcc Reusing MANIFEST C:\Users\carrjose\source\repos\Electronics-Template-Application\ElectronicsTemplateApp\bin\Release\net6.0-windows\ElectronicsTemplateApp.exe.WebView2\EBWebView\Default\Session Storage/MANIFEST-000001
+2023/10/11-15:30:44.064 9bcc Recovering log #16
+2023/10/11-15:30:44.064 9bcc Level-0 table #19: started
+2023/10/11-15:30:44.093 9bcc Level-0 table #19: 27374 bytes OK
+2023/10/11-15:30:44.109 9bcc Delete type=0 #16
+2023/10/11-15:30:44.116 9bcc Compacting 4@0 + 1@1 files
+2023/10/11-15:30:44.151 9bcc Generated table #21@0: 76 keys, 1734 bytes
+2023/10/11-15:30:44.151 9bcc Compacted 4@0 + 1@1 files => 1734 bytes
+2023/10/11-15:30:44.152 9bcc compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/10/11-15:30:44.153 9bcc Delete type=2 #8
+2023/10/11-15:30:44.153 9bcc Delete type=2 #11
+2023/10/11-15:30:44.153 9bcc Delete type=2 #14
+2023/10/11-15:30:44.153 9bcc Delete type=2 #17
+2023/10/11-15:30:44.153 9bcc Delete type=2 #19
